@@ -10,12 +10,12 @@ function construstTimeTable(timeTable, talksData) {
 
       var talk = talksData.filter(function (t) { return t.name.indexOf(name) == 0; })[index];
       console.log(talk)
-      
+
       if (name == "改行") {
         return { time: "\xa0", name: "\xa0", title: "", major: ""};
       }
       else if (name == "休憩・座談会") {
-        return { time: time, name: "休憩・座談会", title: "", major: ""};
+        return { time: time, name: "", title: "休憩・座談会", major: ""};
       }
       else if (name == "講演終了") {
         return { time: time, name: "講演終了", title: "", major: ""};

@@ -13,6 +13,9 @@ function construstTimeTable(timeTable, talksData) {
       if (name == "改行") {
         return { time: "\xa0", name: "\xa0", title: "", major: ""};
       }
+      if (name == "休憩・座談会") {
+        return { time: time, name: name, title: "", major: ""};
+      }
       else {
         return { time: time, name: talk.name, title: talk.title, major: talk.affiliation };
       }

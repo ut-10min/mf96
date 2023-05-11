@@ -6,6 +6,7 @@ function construstTimeTable(timeTable, talksData) {
       // console.log(time);
       var name = timeTable[time];
       // console.log(name);
+      
       var index = 0;
       var talk = talksData.filter(function (t) { return t.name.indexOf(name) == 0; })[index];
       // console.log(talk)

@@ -9,7 +9,7 @@ function construstTimeTable(timeTable, talksData) {
 
       var index = 0;
       var talk = talksData.filter(function (t) { return t.name.indexOf(name) == 0; })[index];
-      // console.log(talk)
+      console.log(talk)
 
       if (name == "改行") {
         return { time: "\xa0", name: "\xa0", title: "", major: ""};

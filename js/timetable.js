@@ -16,6 +16,9 @@ function construstTimeTable(timeTable, talksData) {
       else if (name == "休憩・座談会") {
         return { time: time, name: "休憩・座談会", title: "", major: ""};
       }
+      else if (name == "講演終了") {
+        return { time: time, name: "講演終了", title: "", major: ""};
+      }
       else {
         return { time: time, name: talk.name, title: talk.title, major: talk.affiliation };
       }

@@ -9,16 +9,6 @@ function construstTimeTable(timeTable, talksData) {
       var index = 0;
 
       var talk = talksData.filter(function (t) { return t.name.indexOf(name) == 0; })[index];
-      // 何部目か判定
-      if (
-        (name == "第1部") ||
-        (name == "第2部") ||
-        (name == "第3部") ||
-        (name == "第4部") 
-      ) 
-      {
-        return { time: name, name: "", title: "", major: ""};
-      } 
       if (name == "改行") {
         return { time: "\xa0", name: "\xa0", title: "", major: ""};
       }

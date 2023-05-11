@@ -6,7 +6,7 @@ function construstTimeTable(timeTable, talksData) {
       // console.log(time);
       var name = timeTable[time];
       // console.log(name);
-      
+
       var index = 0;
       var talk = talksData.filter(function (t) { return t.name.indexOf(name) == 0; })[index];
       // console.log(talk)
@@ -14,8 +14,11 @@ function construstTimeTable(timeTable, talksData) {
       if (name == "改行") {
         return { time: "\xa0", name: "\xa0", title: "", major: ""};
       }
-      else if (name == "休憩・座談会") {
-        return { time: time, name: "", title: "休憩・座談会", major: ""};
+      else if (name == "座談会1") {
+        return { time: time, name: "", title: "座談会①: 「専門分野に興味を持ったきっかけ」「大学院を卒業した後の進路」「研究生活で楽しいこと/大変なこと」", major: ""};
+      }
+      else if (name == "座談会2") {
+        return { time: time, name: "", title: "座談会②: 「研究の息抜き、課外活」", major: ""};
       }
       else if (name == "講演終了") {
         return { time: time, name: "講演終了", title: "", major: ""};

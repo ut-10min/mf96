@@ -18,7 +18,7 @@ function construstTimeTable(timeTable, talksData) {
         return { time: time, name: "", title: "座談会①「専門分野に興味を持ったきっかけ」「大学院を卒業した後の進路」「研究生活で楽しいこと/大変なこと」", major: ""};
       }
       else if (name == "座談会2") {
-        return { time: time, name: "", title: "座談会②「研究の息抜き、課外活」", major: ""};
+        return { time: time, name: "", title: "座談会②「研究の息抜き、課外活動」", major: ""};
       }
       else if (name == "講演終了") {
         return { time: time, name: "講演終了", title: "", major: ""};
